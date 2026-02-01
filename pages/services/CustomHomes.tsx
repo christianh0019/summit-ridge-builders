@@ -33,9 +33,10 @@ export const CustomHomes: React.FC = () => {
     return (
         <main className="w-full overflow-x-hidden">
             <SEO
-                title="Custom Home Builders in Northern Colorado | Estes Park, Boulder & Loveland"
+                title="Custom Home Builders Northern Colorado | Estes Park & Boulder"
                 description="Summit Ridge Builders delivers luxury custom homes across Northern Colorado. From difficult mountain terrain to sustainable design-builds. Since 1995."
                 canonical="/services/custom-home-construction"
+                keywords="custom home builder, luxury home builders, custom built homes, Estes Park builders, Boulder custom homes, sustainable home construction"
             />
 
             {/* -----------------------------------------------------------------------
