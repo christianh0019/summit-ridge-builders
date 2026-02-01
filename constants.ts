@@ -88,7 +88,7 @@ export const PROJECTS = [
     location: "Loveland, CO",
     features: ["Vaulted Cedar Ceilings", "Floor-to-Ceiling Windows", "Radiant Heated Floors"],
     image: "https://picsum.photos/id/15/800/600",
-    description: "A modern prairie-style home designed to capture expansive mountain views."
+    description: "A modern prairie-style home designed to capture expansive mountain views while maintaining warmth and comfort year-round. Built for a retired couple seeking low maintenance and luxury."
   },
   {
     id: 2,
@@ -96,7 +96,7 @@ export const PROJECTS = [
     location: "Boulder, CO",
     features: ["Open-Concept Kitchen", "Smart Home Automation", "Energy-Efficient Envelope"],
     image: "https://picsum.photos/id/28/800/600",
-    description: "Contemporary take on classic farmhouse design blending clean lines with natural materials."
+    description: "A contemporary take on classic farmhouse design, blending clean lines with natural materials for a growing family focused on sustainability and functionality."
   },
   {
     id: 3,
@@ -104,7 +104,7 @@ export const PROJECTS = [
     location: "Estes Park, CO",
     features: ["Timber Frame Accents", "Outdoor Living Deck", "Stone Fireplace"],
     image: "https://picsum.photos/id/29/800/600",
-    description: "A luxury mountain retreat designed as a second home, emphasizing indoor-outdoor living."
+    description: "A luxury mountain retreat designed as a second home, emphasizing indoor-outdoor living and dramatic alpine aesthetics."
   },
 ];
 
@@ -122,3 +122,26 @@ export const FAQ_ITEMS = [
     answer: "From design to key handover, a typical custom project takes 12-18 months. The design and permitting phase usually requires 4-6 months, while construction takes 8-12 months depending on complexity and weather."
   }
 ];
+
+export const ABOUT_PAGE = {
+  founderName: "John Reynolds",
+  founderBio: "Started as a framing carpenter in 1995 and built Summit Ridge on craftsmanship, transparency, and long-term client relationships.",
+  coreValues: ["Craftsmanship", "Transparency", "Reliability", "Long-Term Value"],
+};
+
+export const CAREERS_PAGE = {
+  hiringEmail: "careers@summitridgebuilders.com",
+  culturePitch: "Tight-knit team, no weekend work, paid training, clear growth paths.",
+  openRoles: ["Site Superintendent", "Project Manager"],
+};
+
+export const PARTNERSHIPS_PAGE = {
+  realtorIncentive: "3% Commission on Base Contract Value",
+  tradePromise: "Net-15 Payment Terms, Clear Scopes, Long-Term Work",
+};
+
+export const REFERRAL_PROGRAM = {
+  incentiveType: "Cash",
+  incentiveValue: "$1,500 Referral Bonus",
+  trigger: "Paid when referred project breaks ground",
+};
