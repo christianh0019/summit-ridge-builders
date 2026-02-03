@@ -55,14 +55,24 @@ export const ApplicationSurvey: React.FC = () => {
     const handleSubmit = async () => {
         setIsSubmitting(true);
 
-        // Simulate API Call / Webhook
-        // const webhookUrl = import.meta.env.VITE_WEBHOOK_URL;
-        // await fetch(webhookUrl, { method: 'POST', body: JSON.stringify(formData) });
+        try {
+            const webhookUrl = import.meta.env.VITE_WEBHOOK_URL;
+            if (webhookUrl) {
+                await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            // Constructively fail - still redirect the user so they can book
+        }
 
         setTimeout(() => {
             setIsSubmitting(false);
             navigate(`/booking?email=${encodeURIComponent(formData.email)}`);
-        }, 1500);
+        }, 500); // Reduced delay since we are awaiting the fetch now
     };
 
     const updateField = (field: keyof SurveyData, value: string) => {

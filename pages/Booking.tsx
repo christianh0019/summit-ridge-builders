@@ -33,28 +33,14 @@ export const Booking: React.FC = () => {
                     </div>
 
                     {/* Calendar Widget Container */}
-                    <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 h-[600px] md:h-[700px] w-full relative">
-                        {/* Placeholder for Calendar Widget */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-50 text-gray-400">
-                            <p className="mb-4">Calendar Widget Loading...</p>
-                            <div className="w-8 h-8 border-4 border-gray-300 border-t-primary rounded-full animate-spin"></div>
-                            {/* 
-                                REAL IMPLEMENTATION:
-                                <iframe 
-                                    src="https://api.leadconnectorhq.com/widget/booking/..." 
-                                    style={{width: '100%', height: '100%', border: 'none'}} 
-                                    scrolling="no"
-                                ></iframe>
-                            */}
-
-                            {/* TEMP: Simulation Button for Demo */}
-                            <button
-                                onClick={() => window.location.href = '/thank-you'}
-                                className="mt-8 px-6 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300 text-sm"
-                            >
-                                (Debug) Simulate Booking Success
-                            </button>
-                        </div>
+                    <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 h-[650px] md:h-[750px] w-full relative">
+                        <iframe
+                            src="https://api.leadconnectorhq.com/widget/booking/7ZxEJR33FnHfU80B9LCj"
+                            style={{ width: '100%', height: '100%', border: 'none' }}
+                            scrolling="no"
+                            id="msgsndr-calendar"
+                            title="Clarity Consultation"
+                        ></iframe>
                     </div>
 
                 </div>
