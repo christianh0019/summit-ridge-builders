@@ -10,6 +10,8 @@ import { Additions } from './pages/services/Additions';
 import { Application } from './pages/Application';
 import { Booking } from './pages/Booking';
 import { ThankYou } from './pages/ThankYou';
+import { CostGuideOptIn } from './pages/resources/CostGuideOptIn';
+import { CostGuide } from './pages/resources/CostGuide';
 import { ScrollToTop } from './components/ScrollToTop'; // Need to create this or mock behavior 
 
 const App: React.FC = () => {
@@ -31,6 +33,8 @@ const App: React.FC = () => {
           <Route path="/application" element={<Application />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/resources/cost-guide-optin" element={<CostGuideOptIn />} />
+          <Route path="/resources/cost-guide" element={<CostGuide />} />
 
           {/* Main Site Routes (Global Header/Footer Wrapper) */}
           <Route element={
